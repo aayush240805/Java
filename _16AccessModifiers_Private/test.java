@@ -2,7 +2,7 @@ package _16AccessModifiers_Private;
 
 public class test {
     public static void main(String[] args){
-        //student s = new student();
+        //_31LamdaExpression.student s = new _31LamdaExpression.student();
 
         //without creating any instance
         student.saySomething();
