@@ -38,7 +38,7 @@ public class _5Strings {
         System.out.println(name1.charAt(4));
         System.out.println(name1.equals(name2));
         System.out.println(name1.equalsIgnoreCase(name2));
-        System.out.println(name1.compareTo(name2));
+        System.out.println(name1.compareTo(name2)); //compares lexicographically (difference between letters ASCII value)
         System.out.println(name1.compareToIgnoreCase(name2));
         System.out.println(name1.substring(3,11));
         System.out.println(name1.substring(7,name1.length()));
