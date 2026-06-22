@@ -22,9 +22,7 @@ public class manually {
         for (int i = 1; i < 10; i++){
             int finalI = i; // <- variable (value changes)
             thread[i - 1] = new Thread(
-                    ()->{
-                        System.out.println(factorial(finalI));
-                    }
+                    ()-> System.out.println(factorial(finalI))
             );
             thread[i - 1].start();
         }

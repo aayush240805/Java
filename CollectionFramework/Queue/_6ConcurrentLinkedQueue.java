@@ -3,7 +3,7 @@ package CollectionFramework.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class _6ConcurrentLinkedQueue {
-// ConcurrentListQueue is an implementation of the Queue interface.
+// ConcurrentLinkedQueue is an implementation of the Queue interface.
     //--> Supports lock-free, thread-safe operations.
 
     private static ConcurrentLinkedQueue<String> taskQueue = new ConcurrentLinkedQueue<>();

@@ -21,7 +21,7 @@ public class readWriteLock {
         private final Lock WL = RWL.writeLock();
 
         //Writing...
-        // This lock is acquired by a thread only if another thread is not acquiring any lock.
+        // This lock is acquired by a thread only if another thread is not acquiring that lock.
         public void increment(){
             WL.lock();
             try {
@@ -52,7 +52,7 @@ public class readWriteLock {
             @Override
             public void run() {
                 for (int i = 0; i < 10; i++){
-                    System.out.println(Thread.currentThread().getName() + " read " + rw.count);
+                    System.out.println(Thread.currentThread().getName() + " read " + rw.getCount());
                 }
             }
         };

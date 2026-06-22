@@ -19,6 +19,10 @@ public class _2PriorityQueue {
 
         System.out.println(pq); // not sorted
 
+        for (Integer element : pq) {
+            System.out.println(element);
+        }
+
         // after removal of each element it gets sorted automatically
         while (!pq.isEmpty()) {
             System.out.println(pq.poll());

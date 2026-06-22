@@ -9,7 +9,7 @@ public class submitRunnable implements Runnable {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService executor = Executors.newSingleThreadExecutor();
 
-        Runnable r = () -> System.out.println("hello"); // <- can't return
+        Runnable r = () -> System.out.println("hello"); // <- doesn't have return type & can't return
 
         Future<?> f = executor.submit(() -> System.out.println("world"));
         Future<?> future = executor.submit(() -> System.out.println("emoji..."), 4);

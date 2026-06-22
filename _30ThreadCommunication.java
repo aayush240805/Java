@@ -58,7 +58,7 @@ public class _30ThreadCommunication {
         @Override
         public void run() {
             for (int i = 0; i < 10; i++){
-                int value = resource.consumer(i);
+                resource.data = resource.consumer(i);
             }
         }
     }

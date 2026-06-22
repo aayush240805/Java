@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class fairnessOfLock {
     public static class fairnessExample{
         // To give chance to run every thread.
+        // true passed as parameter to maintain the sequence the order of running threads in which order they started.
         private final Lock L = new ReentrantLock(true);
 
         public void accessResource() {

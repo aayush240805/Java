@@ -19,7 +19,7 @@ class myThread extends Thread {
                     break;
                 }
             } catch (Exception e) {
-                System.out.println("before catch : " + Thread.currentThread().isInterrupted());
+                System.out.println("after catch : " + Thread.currentThread().isInterrupted());
                 // after throwing an interruptedException JVM internally resets interrupted flag to true
                 System.out.println("Interrupted");
                 break;

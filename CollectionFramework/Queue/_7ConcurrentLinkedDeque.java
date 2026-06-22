@@ -10,7 +10,7 @@ public class _7ConcurrentLinkedDeque {
         deque.add("Element 1");
         deque.addFirst("Element 0");
         deque.addLast("Element 2");
-        System.out.println(deque); // unordered
+        System.out.println(deque);
 
         System.out.println(deque.removeFirst());
         System.out.println(deque.removeLast());

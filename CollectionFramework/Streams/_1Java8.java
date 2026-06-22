@@ -28,8 +28,8 @@ class sumOperation implements mathOperation {
 public class _1Java8 {
     public static void main(String[] args) {
         // Java 8 features
-        // Minimal Code, Function Programming
-        // , Streams, Date & Time API
+        // Minimal Code, Functional Programming,
+        // Streams, Date & Time API
 
         // Lambda Expression : It is an anonymous function (no name, no return type, no access modifier).
         //                     It provides a concise way to implement a functional interface.

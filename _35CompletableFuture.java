@@ -1,5 +1,14 @@
 import java.util.concurrent.*;
 
+
+// CompletableFuture is used to perform asynchronous and non-blocking tasks efficiently.
+// Introduced in Java 8, it allows tasks to run in separate threads and provides powerful methods to manage,
+// combine, and process results of asynchronous computations.
+
+// Unlike the traditional Future interface, it supports non-blocking operations,
+// functional-style callback chaining, built-in exception handling, and manual completion.
+
+
 public class _35CompletableFuture {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         CompletableFuture<String> cf1 = CompletableFuture.supplyAsync(() -> {

@@ -24,7 +24,16 @@ public class _34CyclicBarrier {
 //        before any of them can continue. It is particularly useful in multi-stage computations
 //        or scenarios where the output of several sub-tasks needs to be combined.
 
+//        It is reusable.
+
+//        Unlike a CountDownLatch, a CyclicBarrier resets automatically after the threads are released
+
 //        Threads wait at the barrier by calling await().
+
+//        Use Cases: 1. Matrix Multiplication
+//                   2. When a system needs to load or fetch services or data from mutiple separate independent threads,
+//                      wait for all to become ready and trigger a final aggregation step.
+//                   3. Multi-Player Game Lobbies: Waiting for a fixed number of players to connect
 
         int numberOfServices = 3;
         ExecutorService executor = Executors.newFixedThreadPool(numberOfServices);

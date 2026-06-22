@@ -1,13 +1,13 @@
 package _27ThreadMethods;
 
-public class run extends Thread{
+public class start extends Thread{
     @Override
     public void run(){
         System.out.println("Running.....");
     }
 
     public static void main(String[] args) {
-        run t1 = new run();
+        start t1 = new start();
         t1.start();
 //        t1.run();
     }

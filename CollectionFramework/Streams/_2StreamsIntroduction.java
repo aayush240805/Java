@@ -16,7 +16,7 @@ public class _2StreamsIntroduction {
         // Enable easy parallelism.
 
         // What is Streams ?
-        // A sequence of elements supporting function & declarative programming.
+        // A sequence of elements supporting functional & declarative programming.
 
         // How to use Streams?
         // Source, intermediate operations & terminal operation.

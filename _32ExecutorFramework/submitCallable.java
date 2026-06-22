@@ -9,7 +9,7 @@ public class submitCallable implements Callable {
 
         ExecutorService executor = Executors.newSingleThreadExecutor();
 
-        Callable<String> c = () -> "hello"; // <- can return
+        Callable<String> c = () -> "hello"; // <- have return type & can return
 
         Future<?> f = executor.submit(() -> "world");
         System.out.println(f.get());

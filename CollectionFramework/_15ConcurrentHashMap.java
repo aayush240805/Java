@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 // Java 8
 // --> No segmentation
-// --> It uses Compare-And-Approach --> No locking except resizing(capacity exceeds by (capacity * loadFactor)) or collision(because we have to deal with linked list).
+// --> It uses Compare-And-Swap Approach --> No locking except resizing(capacity exceeds by (capacity * loadFactor)) or collision(because we have to deal with linked list).
 
 // Example 1 : using variable
 // Thread A : last saw --> x = 42

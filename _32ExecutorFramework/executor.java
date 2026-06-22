@@ -27,9 +27,7 @@ public class executor {
         for (int i = 1; i <= 10; i++){
             int finalI = i;
             executor.submit(
-                    () -> {
-                        System.out.println(factorial(finalI));
-                    }
+                    () -> System.out.println(factorial(finalI))
             );
         }
         executor.shutdown(); // To Stop! and we can't submit any task to it further.
