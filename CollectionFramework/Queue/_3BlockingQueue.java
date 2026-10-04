@@ -83,7 +83,7 @@ public class _3BlockingQueue {
 
 
 
-        BlockingQueue<Integer> queue1 = new ArrayBlockingQueue<>(5);
+        BlockingQueue<Integer> queue1 = new LinkedBlockingQueue<>(5);
         // Optionally bounded backed by LinkedList
         // uses two separate locks for enqueue and dequeue operations
         // higher concurrency between producer and consumer --> throughput increases, waiting decreases
