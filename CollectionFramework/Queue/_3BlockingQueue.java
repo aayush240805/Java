@@ -1,10 +1,7 @@
 package CollectionFramework.Queue;
 
 import java.util.Comparator;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.PriorityBlockingQueue;
-import java.util.concurrent.SynchronousQueue;
+import java.util.concurrent.*;
 
 class Producer implements Runnable {
     private BlockingQueue<Integer> queue;
